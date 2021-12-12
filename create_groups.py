@@ -41,8 +41,8 @@ while True:
     
     for group_num, group in groups.items():
         print(f'Group #{group_num+1}')
-        for student in group:
-            print(f'{student[0]} {student[1]}: {student[2]}')
+        for (first_name, last_name, score) in group:
+            print(f'{first_name} {last_name}')
         print()
 
     if input('Accept groups? [y/n]').strip() == 'y':
