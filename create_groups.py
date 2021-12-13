@@ -41,6 +41,7 @@ while True:
     
     for group_num, group in groups.items():
         print(f'Group #{group_num+1}')
+        random.shuffle(group)
         for (first_name, last_name, score) in group:
             print(f'{first_name} {last_name}')
         print()
